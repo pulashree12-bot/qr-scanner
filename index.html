@@ -41,7 +41,7 @@ function onScanSuccess(decodedText) {
   scanner.pause();
 
   // Call Google Script
-  fetch("https://script.google.com/macros/s/AKfycbzPz2EIHagh6RIEgo1Dlp-5wtjsIXweopd6NcouIHDL1ANbLMjnCr3sIQJrCas6q8JV/exec?id=" + decodedText)
+  fetch("https://script.google.com/macros/s/AKfycbwrRCawb_HEbL3m2t052o6ARqvs78kaAQSZ_N_r2jeusaeqpGoOR-3t6r1QrzOpa62o/exec?id=" + decodedText)
     .then(res => res.text())
     .then(data => {
 
